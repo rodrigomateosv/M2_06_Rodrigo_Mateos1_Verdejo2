@@ -1,11 +1,14 @@
 #EJERCICIO1
 # PARTE 1 
-import math
-print("Introduca el radio del circulo:")
-Radio = float(input()) #para capturar el radio.
-Area = math.pi*(Radio*Radio)
-print ("el area del circulo con radio", Radio , "es:", Area)
 
+
+import math
+def area_circulo():
+     Radio = float(input("Introduca el radio del circulo:\n")) 
+     Area = math.pi*(Radio*Radio)
+     return 'El área de un circulo de radio {} es de {} unidades cuadradas.'.format(Radio, Area)
+
+print (area_circulo())
 #EJERCICIO2
 
 
